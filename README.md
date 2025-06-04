@@ -11,6 +11,7 @@ This project explores the **Heart Failure Clinical Records Dataset** from Kaggle
 
 - `code.ipynb`: Main Jupyter Notebook containing the full workflow — from data loading and preprocessing to model building and evaluation.
 - `README.md`: Project documentation (you’re here).
+- `data.csv`: CSV file containing the data (downloaded from Kaggle).
 
 ---
 
@@ -25,11 +26,12 @@ This project explores the **Heart Failure Clinical Records Dataset** from Kaggle
 
 ## 🧪 Technologies & Libraries
 
-- Python 3.x
+- Python 3.13
 - Jupyter Notebook
-- Pandas, NumPy
+- Pandas
 - Matplotlib, Seaborn
 - Scikit-learn
+- LightGBM
 
 ---
 
@@ -46,9 +48,8 @@ The notebook includes:
 ## 🤖 Machine Learning Models
 
 - **Logistic Regression**
-- **Decision Tree**
 - **Random Forest**
-- **K-Nearest Neighbors (KNN)**
+- **LightGBM**
 
 Model evaluation includes:
 - Confusion Matrix
@@ -59,16 +60,8 @@ Model evaluation includes:
 
 ## 📈 Results & Insights
 
-- Identified key predictors of heart failure, such as **serum creatinine**, **ejection fraction**, and **age**.
+- Identified key predictors of heart failure, such as **serum creatinine**, **ejection fraction**, and **time**.
 - Best performing models showed promising accuracy for a small medical dataset.
 - Visual insights suggest patients with lower ejection fraction and high serum creatinine had a higher mortality risk.
 
 ---
-
-## 🚀 How to Run
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/yourusername/heart-failure-analysis.git
-   cd heart-failure-analysis
-   ```
